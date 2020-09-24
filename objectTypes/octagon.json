@@ -1,55 +1,49 @@
 {
-	"name": "PlatformRotating",
+	"name": "Octagon",
 	"plugin-id": "Sprite",
-	"sid": 396114975867710,
+	"sid": 546656971016692,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Rotate",
-			"name": "Rotate",
-			"sid": 877752320776061
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 128,
-						"height": 128,
-						"originX": 0.5,
+						"width": 795,
+						"height": 796,
+						"originX": 0.5006289308176101,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 816304,
+						"imageSpriteId": 5321513,
 						"collisionPoly": {
 							"points": [
-								0.4765625,
-								0.4765625,
-								0.5,
+								0.17686010712389622,
 								0,
-								0.515625,
-								0.4765625,
-								0.9921875,
-								0.5,
-								0.515625,
-								0.515625,
-								0.5,
-								0.9921875,
-								0.4765625,
-								0.515625,
+								0.8378970420771341,
 								0,
-								0.5
+								1,
+								0.18485363831825966,
+								1,
+								0.820412973084983,
+								0.8331310089555982,
+								1,
+								0.19949497325867702,
+								1,
+								0,
+								0.8145402824596805,
+								0,
+								0.17547916828572213
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 349431512012933,
+				"sid": 670328687586846,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

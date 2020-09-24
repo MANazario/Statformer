@@ -1,55 +1,41 @@
 {
-	"name": "PlatformRotating",
+	"name": "SpeedButton",
 	"plugin-id": "Sprite",
-	"sid": 396114975867710,
+	"sid": 939289429290327,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Rotate",
-			"name": "Rotate",
-			"sid": 877752320776061
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 128,
-						"height": 128,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 211,
+						"height": 140,
+						"originX": 0.5971563981042654,
+						"originY": 0.6428571428571429,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 816304,
+						"imageSpriteId": 1581584,
 						"collisionPoly": {
 							"points": [
-								0.4765625,
-								0.4765625,
-								0.5,
+								0.004739336492890996,
 								0,
-								0.515625,
-								0.4765625,
-								0.9921875,
-								0.5,
-								0.515625,
-								0.515625,
-								0.5,
-								0.9921875,
-								0.4765625,
-								0.515625,
+								1,
 								0,
-								0.5
+								1,
+								1,
+								0.004739336492890996,
+								1
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 349431512012933,
+				"sid": 975455334296779,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

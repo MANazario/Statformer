@@ -1,0 +1,82 @@
+{
+	"name": "Stat Rolling Sheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "StatDiceSpeed",
+					"sid": 197043011443738,
+					"parameters": {
+						"animation": "\"Animation 1\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "StatDiceSpeed",
+					"sid": 911695411102700,
+					"parameters": {
+						"animation": "\"Animation 1\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 643791875684504
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 127217852863772
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-speed",
+					"objectClass": "StatDiceSpeed",
+					"sid": 909507067629979,
+					"parameters": {
+						"speed": "8"
+					}
+				}
+			],
+			"sid": 963976246021483
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 308253441858064,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 763727426345686,
+					"parameters": {
+						"object": "SpeedButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-animation",
+					"objectClass": "StatDiceSpeed",
+					"sid": 232394144036759
+				}
+			],
+			"sid": 835535724309027
+		}
+	],
+	"sid": 349017335582107
+}
