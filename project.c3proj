@@ -37,7 +37,11 @@
 			"PlatformHorizontal",
 			"PlatformVertical",
 			"PlatformStatic",
-			"PlatformRotating"
+			"PlatformRotating",
+			"Rotator1",
+			"Rotator2",
+			"Rotator3",
+			"Rotator4"
 		],
 		"subfolders": []
 	},
