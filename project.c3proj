@@ -56,8 +56,40 @@
 		},
 		{
 			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"version": "r210.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Rotate",
 			"name": "Rotate",
+			"author": "Scirra",
+			"version": "r210.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Platform",
+			"name": "Platform",
+			"author": "Scirra",
+			"version": "r210.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "bound",
+			"name": "Bound to layout",
+			"author": "Scirra",
+			"version": "r210.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
 			"author": "Scirra",
 			"version": "r210.2",
 			"bundled": false
@@ -78,9 +110,12 @@
 			"OctagonBG",
 			"StatDiceSpeed",
 			"SpeedText",
-			"SpeedButton",
+			"ButtonSpeed",
 			"Mouse",
-			"Keyboard"
+			"Keyboard",
+			"PlayerCharacter",
+			"StatDiceJumpHeight",
+			"ButtonJumpHeight"
 		],
 		"subfolders": []
 	},

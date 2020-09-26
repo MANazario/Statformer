@@ -1,35 +1,41 @@
 {
-	"name": "PlatformStatic",
+	"name": "ButtonSpeed",
 	"plugin-id": "Sprite",
-	"sid": 664075147911559,
+	"sid": 939289429290327,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 459510126333228
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 211,
+						"height": 140,
+						"originX": 0.5971563981042654,
+						"originY": 0.6428571428571429,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9064538,
+						"imageSpriteId": 1581584,
+						"collisionPoly": {
+							"points": [
+								0.004739336492890996,
+								0,
+								1,
+								0,
+								1,
+								1,
+								0.004739336492890996,
+								1
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 581757428189603,
+				"sid": 975455334296779,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -2,80 +2,184 @@
 	"name": "Stat Rolling Sheet",
 	"events": [
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Speed",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "on-animation-finished",
-					"objectClass": "StatDiceSpeed",
-					"sid": 197043011443738,
-					"parameters": {
-						"animation": "\"Animation 1\""
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "StatDiceSpeed",
-					"sid": 911695411102700,
-					"parameters": {
-						"animation": "\"Animation 1\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 643791875684504
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 127217852863772
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation-speed",
-					"objectClass": "StatDiceSpeed",
-					"sid": 909507067629979,
-					"parameters": {
-						"speed": "8"
-					}
-				}
-			],
-			"sid": 963976246021483
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-click",
-					"objectClass": "Mouse",
-					"sid": 308253441858064,
-					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 163729433730633
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-speed",
+							"objectClass": "StatDiceSpeed",
+							"sid": 543148659984174,
+							"parameters": {
+								"speed": "8"
+							}
+						}
+					],
+					"sid": 280411323413961
 				},
 				{
-					"id": "cursor-is-over-object",
-					"objectClass": "Mouse",
-					"sid": 763727426345686,
-					"parameters": {
-						"object": "SpeedButton"
-					}
-				}
-			],
-			"actions": [
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "StatDiceSpeed",
+							"sid": 527384439308759,
+							"parameters": {
+								"animation": "\"Animation 1\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "StatDiceSpeed",
+							"sid": 420352757793376,
+							"parameters": {
+								"animation": "\"Animation 1\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 281221314920290
+				},
 				{
-					"id": "stop-animation",
-					"objectClass": "StatDiceSpeed",
-					"sid": 232394144036759
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-click",
+							"objectClass": "Mouse",
+							"sid": 583420725411588,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked"
+							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 781198855787508,
+							"parameters": {
+								"object": "ButtonSpeed"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-animation",
+							"objectClass": "StatDiceSpeed",
+							"sid": 753272589639756
+						},
+						{
+							"id": "set-animation-speed",
+							"objectClass": "PlayerCharacter",
+							"sid": 671884252291392,
+							"parameters": {
+								"speed": "100 + ((StatDiceSpeed.AnimationFrame+1) * 100)"
+							}
+						}
+					],
+					"sid": 357158760338082
 				}
 			],
-			"sid": 835535724309027
+			"sid": 869127865165214
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Jump Height",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 460125290118254
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-speed",
+							"objectClass": "StatDiceJumpHeight",
+							"sid": 913525653412982,
+							"parameters": {
+								"speed": "8"
+							}
+						}
+					],
+					"sid": 863821364260004
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "StatDiceJumpHeight",
+							"sid": 791374249972441,
+							"parameters": {
+								"animation": "\"Animation 1\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "StatDiceJumpHeight",
+							"sid": 355073615705673,
+							"parameters": {
+								"animation": "\"Animation 1\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 672209878254452
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-click",
+							"objectClass": "Mouse",
+							"sid": 426802107377473,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked"
+							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 288323780238127,
+							"parameters": {
+								"object": "ButtonJumpHeight"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-animation",
+							"objectClass": "StatDiceJumpHeight",
+							"sid": 129568494487481
+						}
+					],
+					"sid": 831135158310870
+				}
+			],
+			"sid": 220323740310669
 		}
 	],
 	"sid": 349017335582107

@@ -1,14 +1,24 @@
 {
-	"name": "PlatformStatic",
+	"name": "PlayerCharacter",
 	"plugin-id": "Sprite",
-	"sid": 664075147911559,
+	"sid": 543532979117901,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 459510126333228
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 177761147460773
+		},
+		{
+			"behaviorId": "bound",
+			"name": "BoundToLayout",
+			"sid": 230066501141322
+		},
+		{
+			"behaviorId": "scrollto",
+			"name": "ScrollTo",
+			"sid": 997191101597902
 		}
 	],
 	"effectTypes": [],
@@ -24,12 +34,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9064538,
+						"imageSpriteId": 6184049,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 581757428189603,
+				"sid": 482060477205615,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
