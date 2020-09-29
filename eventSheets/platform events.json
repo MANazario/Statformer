@@ -1,5 +1,28 @@
 {
 	"name": "Platform Events",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 316498567987112
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-scale",
+					"objectClass": "System",
+					"sid": 639342170209510,
+					"parameters": {
+						"layer": "0",
+						"scale": "0.75"
+					}
+				}
+			],
+			"sid": 236667267323278
+		}
+	],
 	"sid": 213779086857886
 }

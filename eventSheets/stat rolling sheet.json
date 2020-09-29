@@ -2,6 +2,37 @@
 	"name": "Stat Rolling Sheet",
 	"events": [
 		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 669920745577681
+				}
+			],
+			"actions": [
+				{
+					"id": "set-max-speed",
+					"objectClass": "PlayerCharacter",
+					"sid": 428522056294209,
+					"behaviorType": "Platform",
+					"parameters": {
+						"max-speed": "100"
+					}
+				},
+				{
+					"id": "set-jump-strength",
+					"objectClass": "PlayerCharacter",
+					"sid": 593839382783394,
+					"behaviorType": "Platform",
+					"parameters": {
+						"jump-strength": "450"
+					}
+				}
+			],
+			"sid": 861326359106806
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Speed",
@@ -14,20 +45,20 @@
 						{
 							"id": "every-tick",
 							"objectClass": "System",
-							"sid": 163729433730633
+							"sid": 547689783257654
 						}
 					],
 					"actions": [
 						{
 							"id": "set-animation-speed",
 							"objectClass": "StatDiceSpeed",
-							"sid": 543148659984174,
+							"sid": 343735805092496,
 							"parameters": {
 								"speed": "8"
 							}
 						}
 					],
-					"sid": 280411323413961
+					"sid": 439236278712725
 				},
 				{
 					"eventType": "block",
@@ -35,7 +66,7 @@
 						{
 							"id": "on-animation-finished",
 							"objectClass": "StatDiceSpeed",
-							"sid": 527384439308759,
+							"sid": 639467863303188,
 							"parameters": {
 								"animation": "\"Animation 1\""
 							}
@@ -45,14 +76,14 @@
 						{
 							"id": "set-animation",
 							"objectClass": "StatDiceSpeed",
-							"sid": 420352757793376,
+							"sid": 899593582149737,
 							"parameters": {
 								"animation": "\"Animation 1\"",
 								"from": "beginning"
 							}
 						}
 					],
-					"sid": 281221314920290
+					"sid": 898405983436001
 				},
 				{
 					"eventType": "block",
@@ -60,7 +91,7 @@
 						{
 							"id": "on-click",
 							"objectClass": "Mouse",
-							"sid": 583420725411588,
+							"sid": 764179555345200,
 							"parameters": {
 								"mouse-button": "left",
 								"click-type": "clicked"
@@ -69,7 +100,7 @@
 						{
 							"id": "cursor-is-over-object",
 							"objectClass": "Mouse",
-							"sid": 781198855787508,
+							"sid": 478254234226598,
 							"parameters": {
 								"object": "ButtonSpeed"
 							}
@@ -79,21 +110,22 @@
 						{
 							"id": "stop-animation",
 							"objectClass": "StatDiceSpeed",
-							"sid": 753272589639756
+							"sid": 533033646974873
 						},
 						{
-							"id": "set-animation-speed",
+							"id": "set-max-speed",
 							"objectClass": "PlayerCharacter",
-							"sid": 671884252291392,
+							"sid": 960507405146466,
+							"behaviorType": "Platform",
 							"parameters": {
-								"speed": "100 + ((StatDiceSpeed.AnimationFrame+1) * 100)"
+								"max-speed": "100+((StatDiceSpeed.AnimationFrame+1)*100)"
 							}
 						}
 					],
-					"sid": 357158760338082
+					"sid": 136499280131053
 				}
 			],
-			"sid": 869127865165214
+			"sid": 650405721089467
 		},
 		{
 			"eventType": "group",
@@ -108,20 +140,20 @@
 						{
 							"id": "every-tick",
 							"objectClass": "System",
-							"sid": 460125290118254
+							"sid": 537166386952782
 						}
 					],
 					"actions": [
 						{
 							"id": "set-animation-speed",
 							"objectClass": "StatDiceJumpHeight",
-							"sid": 913525653412982,
+							"sid": 571566338307667,
 							"parameters": {
 								"speed": "8"
 							}
 						}
 					],
-					"sid": 863821364260004
+					"sid": 522443091617488
 				},
 				{
 					"eventType": "block",
@@ -129,7 +161,7 @@
 						{
 							"id": "on-animation-finished",
 							"objectClass": "StatDiceJumpHeight",
-							"sid": 791374249972441,
+							"sid": 789238973495054,
 							"parameters": {
 								"animation": "\"Animation 1\""
 							}
@@ -139,14 +171,14 @@
 						{
 							"id": "set-animation",
 							"objectClass": "StatDiceJumpHeight",
-							"sid": 355073615705673,
+							"sid": 836096553846697,
 							"parameters": {
 								"animation": "\"Animation 1\"",
 								"from": "beginning"
 							}
 						}
 					],
-					"sid": 672209878254452
+					"sid": 833586063922836
 				},
 				{
 					"eventType": "block",
@@ -154,7 +186,7 @@
 						{
 							"id": "on-click",
 							"objectClass": "Mouse",
-							"sid": 426802107377473,
+							"sid": 823453689799768,
 							"parameters": {
 								"mouse-button": "left",
 								"click-type": "clicked"
@@ -163,7 +195,7 @@
 						{
 							"id": "cursor-is-over-object",
 							"objectClass": "Mouse",
-							"sid": 288323780238127,
+							"sid": 824260103829267,
 							"parameters": {
 								"object": "ButtonJumpHeight"
 							}
@@ -173,13 +205,22 @@
 						{
 							"id": "stop-animation",
 							"objectClass": "StatDiceJumpHeight",
-							"sid": 129568494487481
+							"sid": 826816091006845
+						},
+						{
+							"id": "set-jump-strength",
+							"objectClass": "PlayerCharacter",
+							"sid": 658734282241429,
+							"behaviorType": "Platform",
+							"parameters": {
+								"jump-strength": "450+((StatDiceJumpHeight.AnimationFrame+1)*150)"
+							}
 						}
 					],
-					"sid": 831135158310870
+					"sid": 560913885968784
 				}
 			],
-			"sid": 220323740310669
+			"sid": 204803888476687
 		}
 	],
 	"sid": 349017335582107

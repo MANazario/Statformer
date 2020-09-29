@@ -1,40 +1,49 @@
 {
-	"name": "PlatformHorizontal",
+	"name": "OctagonLayout",
 	"plugin-id": "Sprite",
-	"sid": 784599907390141,
+	"sid": 863678815170445,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Sin",
-			"name": "Sine",
-			"sid": 423977102741762
-		},
-		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 704334788238494
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 800,
+						"height": 800,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7039297,
+						"imageSpriteId": 8058475,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5,
+								0,
+								0.99875,
+								0,
+								0.99875,
+								0.5,
+								0.99875,
+								0.99875,
+								0.5,
+								0.99875,
+								0,
+								0.99875,
+								0,
+								0.5
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 926576237236332,
+				"sid": 453823749416331,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
