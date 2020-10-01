@@ -1,29 +1,57 @@
 {
 	"name": "Rotator1",
 	"plugin-id": "Sprite",
-	"sid": 828769814682177,
+	"sid": 815438765115284,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 112455454953107
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 113868546169217
+		},
+		{
+			"behaviorId": "Orbit",
+			"name": "Orbit",
+			"sid": 659936502383136
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 226,
+						"height": 102,
+						"originX": 0.4690265486725664,
+						"originY": 0.30392156862745096,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2027604,
+						"imageSpriteId": 8736352,
+						"collisionPoly": {
+							"points": [
+								0.004424778761061947,
+								0.19117647058823545,
+								0.9977876106194691,
+								0.20098039215686292,
+								0.9845132743362834,
+								0.30392156862745284,
+								0.019911504424778757,
+								0.30392156862745284
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 841954913847029,
+				"sid": 483158229804130,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

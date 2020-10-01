@@ -77,6 +77,14 @@
 			"author": "Scirra",
 			"version": "r210.2",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Orbit",
+			"name": "Orbit",
+			"author": "Scirra",
+			"version": "r210.2",
+			"bundled": false
 		}
 	],
 	"uniqueId": "bp7953fqpbx",
@@ -86,7 +94,6 @@
 			"PlatformVertical",
 			"PlatformStatic",
 			"PlatformRotating",
-			"Rotator1",
 			"Rotator2",
 			"Rotator3",
 			"Rotator4",
@@ -98,7 +105,9 @@
 			"StatDiceJumpHeight",
 			"ButtonJumpHeight",
 			"OctagonLayout",
-			"ContinueButton"
+			"ContinueButton",
+			"Rotator1",
+			"Walls"
 		],
 		"subfolders": []
 	},
