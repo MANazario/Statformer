@@ -22,6 +22,27 @@
 				}
 			],
 			"sid": 236667267323278
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerCharacter",
+					"sid": 979581233541352,
+					"parameters": {
+						"object": "HazardRotating"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 996392503608560
+				}
+			],
+			"sid": 652250463146993
 		}
 	],
 	"sid": 213779086857886

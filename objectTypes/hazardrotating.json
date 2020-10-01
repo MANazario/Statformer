@@ -1,0 +1,68 @@
+{
+	"name": "HazardRotating",
+	"plugin-id": "Sprite",
+	"sid": 396114975867710,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Rotate",
+			"name": "Rotate",
+			"sid": 877752320776061
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 764161941231417
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 512,
+						"height": 512,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 816304,
+						"collisionPoly": {
+							"points": [
+								0.1484375,
+								0.1015625,
+								0.5,
+								0,
+								0.859375,
+								0.140625,
+								0.9921875,
+								0.5,
+								0.8515625,
+								0.859375,
+								0.5,
+								0.9921875,
+								0.1796875,
+								0.8671875,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 349431512012933,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

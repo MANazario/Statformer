@@ -93,7 +93,7 @@
 			"PlatformHorizontal",
 			"PlatformVertical",
 			"PlatformStatic",
-			"PlatformRotating",
+			"HazardRotating",
 			"Rotator2",
 			"Rotator3",
 			"Rotator4",
