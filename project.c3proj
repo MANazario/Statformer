@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 21002,
+	"savedWithRelease": 21800,
 	"name": "Statformer",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -11,7 +11,7 @@
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
-			"version": "r210.2",
+			"version": "r218",
 			"bundled": false
 		},
 		{
@@ -19,7 +19,7 @@
 			"id": "Mouse",
 			"name": "Mouse",
 			"author": "Scirra",
-			"version": "r210.2",
+			"version": "r218",
 			"bundled": false
 		},
 		{
@@ -27,7 +27,7 @@
 			"id": "Keyboard",
 			"name": "Keyboard",
 			"author": "Scirra",
-			"version": "r210.2",
+			"version": "r218",
 			"bundled": false
 		},
 		{
@@ -35,7 +35,15 @@
 			"id": "Text",
 			"name": "Text",
 			"author": "Scirra",
-			"version": "r210.2",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"version": "r218",
 			"bundled": false
 		},
 		{
@@ -43,7 +51,7 @@
 			"id": "Sin",
 			"name": "Sine",
 			"author": "Scirra",
-			"version": "r210.2",
+			"version": "r218",
 			"bundled": false
 		},
 		{
@@ -51,7 +59,7 @@
 			"id": "solid",
 			"name": "Solid",
 			"author": "Scirra",
-			"version": "r210.2",
+			"version": "r218",
 			"bundled": false
 		},
 		{
@@ -59,7 +67,7 @@
 			"id": "Rotate",
 			"name": "Rotate",
 			"author": "Scirra",
-			"version": "r210.2",
+			"version": "r218",
 			"bundled": false
 		},
 		{
@@ -67,7 +75,7 @@
 			"id": "Platform",
 			"name": "Platform",
 			"author": "Scirra",
-			"version": "r210.2",
+			"version": "r218",
 			"bundled": false
 		},
 		{
@@ -75,7 +83,7 @@
 			"id": "bound",
 			"name": "Bound to layout",
 			"author": "Scirra",
-			"version": "r210.2",
+			"version": "r218",
 			"bundled": false
 		},
 		{
@@ -83,7 +91,7 @@
 			"id": "scrollto",
 			"name": "Scroll To",
 			"author": "Scirra",
-			"version": "r210.2",
+			"version": "r218",
 			"bundled": false
 		},
 		{
@@ -91,7 +99,7 @@
 			"id": "Orbit",
 			"name": "Orbit",
 			"author": "Scirra",
-			"version": "r210.2",
+			"version": "r218",
 			"bundled": false
 		}
 	],
@@ -117,7 +125,8 @@
 			"Walls",
 			"StatDiceHealth",
 			"StatDiceGravity",
-			"StatText"
+			"StatText",
+			"Audio"
 		],
 		"subfolders": []
 	},
@@ -147,7 +156,43 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "Cartoon Falling Sound Effect 2.mp3",
+					"type": "audio/mpeg",
+					"sid": 221435753320609
+				},
+				{
+					"name": "fireball whoosh ( sound effects ).mp3",
+					"type": "audio/mpeg",
+					"sid": 320073211818858
+				},
+				{
+					"name": "Game Over (Sound Effect).mp3",
+					"type": "audio/mpeg",
+					"sid": 145418273615333
+				},
+				{
+					"name": "hurtnoice.mp3",
+					"type": "audio/mpeg",
+					"sid": 991226665541168
+				},
+				{
+					"name": "jumping 2.mp3",
+					"type": "audio/mpeg",
+					"sid": 713055881531190
+				},
+				{
+					"name": "jumping.mp3",
+					"type": "audio/mpeg",
+					"sid": 554586726720792
+				},
+				{
+					"name": "Space Ambience Atmosphere Free Sound Effect.mp3",
+					"type": "audio/mpeg",
+					"sid": 562081785516555
+				}
+			],
 			"subfolders": []
 		},
 		"music": {

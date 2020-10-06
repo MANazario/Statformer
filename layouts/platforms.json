@@ -9,7 +9,7 @@
 					"type": "PlayerCharacter",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "running",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -43,12 +43,12 @@
 						}
 					},
 					"world": {
-						"x": 325,
-						"y": 1081,
-						"width": 27.16615541441226,
-						"height": 27.16615541441226,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 326.7370949805936,
+						"y": 1091.4225698835614,
+						"width": 30.969417172429974,
+						"height": 40.857897743276034,
+						"originX": 0.43157894736842106,
+						"originY": 0.6382978723404256,
 						"color": [
 							1,
 							1,
