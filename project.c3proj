@@ -126,7 +126,8 @@
 			"StatDiceHealth",
 			"StatDiceGravity",
 			"StatText",
-			"Audio"
+			"Audio",
+			"Sprite"
 		],
 		"subfolders": []
 	},
@@ -196,7 +197,13 @@
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "AdhesiveWombat - Night Shade NO COPYRIGHT 8-bit Music.mp3",
+					"type": "audio/mpeg",
+					"sid": 754225194073930
+				}
+			],
 			"subfolders": []
 		},
 		"video": {
