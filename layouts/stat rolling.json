@@ -64,35 +64,6 @@
 					}
 				},
 				{
-					"type": "ContinueButton",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 12,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 390,
-						"y": 518,
-						"width": 250,
-						"height": 79,
-						"originX": 0.504,
-						"originY": 1.5949367088607596,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "StatDiceHealth",
 					"properties": {
 						"initially-visible": true,
@@ -180,75 +151,63 @@
 					}
 				},
 				{
-					"type": "StatText",
+					"type": "Continue",
+					"properties": {
+						"type": "button",
+						"text": "CONTINUE",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": true,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 39,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 336.97531657640184,
+						"y": 382.2428079713962,
+						"width": 106.395051630034,
+						"height": 86.23866485434723,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "Label",
 					"properties": {
 						"text": "Speed",
 						"enable-bbcode": true,
-						"font": "Copperplate Gothic",
+						"font": "Arial",
 						"size": 12,
 						"line-height": 0,
-						"bold": true,
+						"bold": false,
 						"italic": false,
 						"color": [
-							0.08627450980392157,
-							0.2549019607843137,
-							0.9372549019607843,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 34,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 287,
-						"y": 10,
-						"width": 200,
-						"height": 30,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "StatText",
-					"properties": {
-						"text": "Vitality",
-						"enable-bbcode": true,
-						"font": "Copperplate Gothic",
-						"size": 12,
-						"line-height": 0,
-						"bold": true,
-						"italic": false,
-						"color": [
-							0.6862745098039216,
-							0.027450980392156862,
+							0,
+							0,
 							0,
 							1
 						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
 						"wrapping": "word",
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 35,
+					"uid": 47,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 464,
-						"y": 158,
+						"x": 352.2659148351679,
+						"y": 6.284848936644053,
 						"width": 200,
 						"height": 30,
 						"originX": 0,
@@ -264,33 +223,33 @@
 					}
 				},
 				{
-					"type": "StatText",
+					"type": "Label",
 					"properties": {
 						"text": "Jump Height",
 						"enable-bbcode": true,
-						"font": "Copperplate Gothic",
+						"font": "Arial",
 						"size": 12,
 						"line-height": 0,
-						"bold": true,
+						"bold": false,
 						"italic": false,
 						"color": [
-							0.4666666666666667,
-							0.058823529411764705,
-							0.7803921568627451,
+							0,
+							0,
+							0,
 							1
 						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
 						"wrapping": "word",
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 36,
+					"uid": 48,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 112,
-						"y": 153,
+						"x": 182.12516733223947,
+						"y": 153.76332509341142,
 						"width": 200,
 						"height": 30,
 						"originX": 0,
@@ -306,33 +265,75 @@
 					}
 				},
 				{
-					"type": "StatText",
+					"type": "Label",
 					"properties": {
-						"text": "Mass",
+						"text": "Health",
 						"enable-bbcode": true,
-						"font": "Copperplate Gothic",
+						"font": "Arial",
 						"size": 12,
 						"line-height": 0,
-						"bold": true,
+						"bold": false,
 						"italic": false,
 						"color": [
-							0.058823529411764705,
-							0.6313725490196078,
-							0.13333333333333333,
+							0,
+							0,
+							0,
 							1
 						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
 						"wrapping": "word",
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 37,
+					"uid": 49,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 290,
-						"y": 279,
+						"x": 536.7217710418756,
+						"y": 166.04727210413785,
+						"width": 200,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Label",
+					"properties": {
+						"text": "Gravity",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 50,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 352.46256588097924,
+						"y": 277.4217250013907,
 						"width": 200,
 						"height": 30,
 						"originX": 0,

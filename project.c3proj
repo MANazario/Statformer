@@ -32,16 +32,24 @@
 		},
 		{
 			"type": "plugin",
-			"id": "Text",
-			"name": "Text",
+			"id": "Audio",
+			"name": "Audio",
 			"author": "Scirra",
 			"version": "r218",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
-			"id": "Audio",
-			"name": "Audio",
+			"id": "Button",
+			"name": "Button",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
 			"author": "Scirra",
 			"version": "r218",
 			"bundled": false
@@ -125,9 +133,11 @@
 			"Walls",
 			"StatDiceHealth",
 			"StatDiceGravity",
-			"StatText",
 			"Audio",
-			"Sprite"
+			"Sprite",
+			"Continue",
+			"Label",
+			"HazardRotating2"
 		],
 		"subfolders": []
 	},
