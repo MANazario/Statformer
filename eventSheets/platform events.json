@@ -269,8 +269,58 @@
 					}
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 755806839548104,
+					"parameters": {
+						"variable": "Health",
+						"value": "1"
+					}
+				}
+			],
 			"sid": 848027885371035
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 467824379698977
+				}
+			],
+			"actions": [
+				{
+					"id": "set-max-speed",
+					"objectClass": "PlayerCharacter",
+					"sid": 592687713310205,
+					"behaviorType": "Platform",
+					"parameters": {
+						"max-speed": "Speed"
+					}
+				},
+				{
+					"id": "set-jump-strength",
+					"objectClass": "PlayerCharacter",
+					"sid": 455044707620427,
+					"behaviorType": "Platform",
+					"parameters": {
+						"jump-strength": "JumpHeight"
+					}
+				},
+				{
+					"id": "set-gravity",
+					"objectClass": "PlayerCharacter",
+					"sid": 883693421580913,
+					"behaviorType": "Platform",
+					"parameters": {
+						"gravity": "Gravity"
+					}
+				}
+			],
+			"sid": 273723179010895
 		}
 	],
 	"sid": 213779086857886

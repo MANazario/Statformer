@@ -2,6 +2,46 @@
 	"name": "Stat Rolling Sheet",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "Health",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 640284221988854
+		},
+		{
+			"eventType": "variable",
+			"name": "Speed",
+			"type": "number",
+			"initialValue": "100",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 469828218381550
+		},
+		{
+			"eventType": "variable",
+			"name": "JumpHeight",
+			"type": "number",
+			"initialValue": "450",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 525387272153645
+		},
+		{
+			"eventType": "variable",
+			"name": "Gravity",
+			"type": "number",
+			"initialValue": "1500",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 714137836963482
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -60,6 +100,42 @@
 					"parameters": {
 						"speed": "16"
 					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 743570142156838,
+					"parameters": {
+						"variable": "Health",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 758570583396284,
+					"parameters": {
+						"variable": "Speed",
+						"value": "100"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 254410251521231,
+					"parameters": {
+						"variable": "JumpHeight",
+						"value": "0450"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 915606446243027,
+					"parameters": {
+						"variable": "Gravity",
+						"value": "1500"
+					}
 				}
 			],
 			"sid": 861326359106806
@@ -93,15 +169,6 @@
 					}
 				},
 				{
-					"id": "set-gravity",
-					"objectClass": "PlayerCharacter",
-					"sid": 436339606670430,
-					"behaviorType": "Platform",
-					"parameters": {
-						"gravity": "1500 + (StatDiceGravity.AnimationFrame * 50)"
-					}
-				},
-				{
 					"id": "stop-animation",
 					"objectClass": "StatDiceHealth",
 					"sid": 761659462406880
@@ -128,15 +195,6 @@
 					}
 				},
 				{
-					"id": "set-gravity",
-					"objectClass": "PlayerCharacter",
-					"sid": 375980282651175,
-					"behaviorType": "Platform",
-					"parameters": {
-						"gravity": "450 + (StatDiceJumpHeight.AnimationFrame * 50)"
-					}
-				},
-				{
 					"id": "stop-animation",
 					"objectClass": "StatDiceSpeed",
 					"sid": 999371142993053
@@ -150,18 +208,45 @@
 					}
 				},
 				{
-					"id": "set-gravity",
-					"objectClass": "PlayerCharacter",
-					"sid": 798935254978341,
-					"behaviorType": "Platform",
-					"parameters": {
-						"gravity": "100 + (StatDiceSpeed.AnimationFrame * 50)"
-					}
-				},
-				{
 					"id": "destroy",
 					"objectClass": "StatStopper",
 					"sid": 480756829257605
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 831132933264828,
+					"parameters": {
+						"variable": "Health",
+						"value": "1 + StatDiceHealth.AnimationFrame"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 280214590426766,
+					"parameters": {
+						"variable": "Speed",
+						"value": "100 + ((StatDiceSpeed.AnimationFrame) * 50)"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 747604076031684,
+					"parameters": {
+						"variable": "JumpHeight",
+						"value": "450 + ((StatDiceJumpHeight.AnimationFrame) * 50)"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 825231442603518,
+					"parameters": {
+						"variable": "Gravity",
+						"value": "1500 + ((StatDiceGravity.AnimationFrame) * 50)"
+					}
 				}
 			],
 			"sid": 186939570718947
