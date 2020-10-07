@@ -5,16 +5,16 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "every-tick",
+					"id": "on-start-of-layout",
 					"objectClass": "System",
-					"sid": 316498567987112
+					"sid": 828819613153445
 				}
 			],
 			"actions": [
 				{
 					"id": "set-layer-scale",
 					"objectClass": "System",
-					"sid": 602736445013842,
+					"sid": 636785203731423,
 					"parameters": {
 						"layer": "0",
 						"scale": "1"
@@ -23,7 +23,7 @@
 				{
 					"id": "rotate-clockwise",
 					"objectClass": "HazardRotating",
-					"sid": 136142908890953,
+					"sid": 203936381791374,
 					"parameters": {
 						"degrees": "5"
 					}
@@ -31,13 +31,49 @@
 				{
 					"id": "rotate-clockwise",
 					"objectClass": "HazardRotating2",
-					"sid": 207558295468493,
+					"sid": 544465797403197,
 					"parameters": {
 						"degrees": "5"
 					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "PlayerCharacter",
+					"sid": 903795525670945,
+					"behaviorType": "Platform",
+					"parameters": {
+						"max-speed": "Speed"
+					}
+				},
+				{
+					"id": "set-jump-strength",
+					"objectClass": "PlayerCharacter",
+					"sid": 145789259552140,
+					"behaviorType": "Platform",
+					"parameters": {
+						"jump-strength": "JumpHeight"
+					}
+				},
+				{
+					"id": "set-gravity",
+					"objectClass": "PlayerCharacter",
+					"sid": 980227985355241,
+					"behaviorType": "Platform",
+					"parameters": {
+						"gravity": "Gravity"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "PlayerCharacter",
+					"sid": 677229285062305,
+					"parameters": {
+						"animation": "\"idol\"",
+						"from": "beginning"
+					}
 				}
 			],
-			"sid": 236667267323278
+			"sid": 488968364115401
 		},
 		{
 			"eventType": "block",
@@ -142,7 +178,7 @@
 				{
 					"id": "key-is-down",
 					"objectClass": "Keyboard",
-					"sid": 916269393186024,
+					"sid": 182686067811902,
 					"parameters": {
 						"key": 37
 					}
@@ -156,6 +192,15 @@
 					"parameters": {
 						"state": "mirrored"
 					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "PlayerCharacter",
+					"sid": 910622249520141,
+					"parameters": {
+						"animation": "\"running\"",
+						"from": "beginning"
+					}
 				}
 			],
 			"sid": 564222201768586
@@ -166,7 +211,7 @@
 				{
 					"id": "key-is-down",
 					"objectClass": "Keyboard",
-					"sid": 340162932039087,
+					"sid": 475720833195806,
 					"parameters": {
 						"key": 39
 					}
@@ -180,147 +225,108 @@
 					"parameters": {
 						"state": "not-mirrored"
 					}
-				}
-			],
-			"sid": 504800131360027
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-moving",
-					"objectClass": "PlayerCharacter",
-					"sid": 782671731525693,
-					"behaviorType": "Platform"
-				}
-			],
-			"actions": [
+				},
 				{
 					"id": "set-animation",
 					"objectClass": "PlayerCharacter",
-					"sid": 154186528822515,
+					"sid": 226381002199827,
 					"parameters": {
 						"animation": "\"running\"",
 						"from": "beginning"
 					}
 				}
 			],
-			"sid": 768290827582212
+			"sid": 504800131360027
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Player",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "compare-speed",
-					"objectClass": "PlayerCharacter",
-					"sid": 844944885921480,
-					"behaviorType": "Platform",
-					"parameters": {
-						"comparison": 0,
-						"speed": "0"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "PlayerCharacter",
-					"sid": 280827186065428,
-					"parameters": {
-						"animation": "\"idol\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 114585501317002
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-jumping",
-					"objectClass": "PlayerCharacter",
-					"sid": 952988972961330,
-					"behaviorType": "Platform"
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "PlayerCharacter",
-					"sid": 749825248125600,
-					"parameters": {
-						"animation": "\"jump\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 667315106270507
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "PlayerCharacter",
-					"sid": 242784255763639,
-					"parameters": {
-						"object": "HazardRotating"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "subtract-from-eventvar",
-					"objectClass": "System",
-					"sid": 755806839548104,
-					"parameters": {
-						"variable": "Health",
-						"value": "1"
-					}
-				}
-			],
-			"sid": 848027885371035
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 467824379698977
-				}
-			],
-			"actions": [
-				{
-					"id": "set-max-speed",
-					"objectClass": "PlayerCharacter",
-					"sid": 592687713310205,
-					"behaviorType": "Platform",
-					"parameters": {
-						"max-speed": "Speed"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-speed",
+							"objectClass": "PlayerCharacter",
+							"sid": 294644929895593,
+							"behaviorType": "Platform",
+							"parameters": {
+								"comparison": 0,
+								"speed": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "PlayerCharacter",
+							"sid": 931616284259180,
+							"parameters": {
+								"animation": "\"idol\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 801316767808718
 				},
 				{
-					"id": "set-jump-strength",
-					"objectClass": "PlayerCharacter",
-					"sid": 455044707620427,
-					"behaviorType": "Platform",
-					"parameters": {
-						"jump-strength": "JumpHeight"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-jumping",
+							"objectClass": "PlayerCharacter",
+							"sid": 658512725936230,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "PlayerCharacter",
+							"sid": 910325191339862,
+							"parameters": {
+								"animation": "\"jump\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 206081784462441
 				},
 				{
-					"id": "set-gravity",
-					"objectClass": "PlayerCharacter",
-					"sid": 883693421580913,
-					"behaviorType": "Platform",
-					"parameters": {
-						"gravity": "Gravity"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "PlayerCharacter",
+							"sid": 828069815019963,
+							"parameters": {
+								"object": "HazardRotating"
+							}
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 394516791732907
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 117203483240424,
+							"parameters": {
+								"variable": "Health",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 453002628720614
 				}
 			],
-			"sid": 273723179010895
+			"sid": 788010289616443
 		}
 	],
 	"sid": 213779086857886
