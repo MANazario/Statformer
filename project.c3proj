@@ -138,7 +138,7 @@
 			"Continue",
 			"Label",
 			"HazardRotating2",
-			"Goal"
+			"block"
 		],
 		"subfolders": []
 	},

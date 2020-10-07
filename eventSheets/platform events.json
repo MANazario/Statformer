@@ -215,6 +215,12 @@
 					"parameters": {
 						"key": 39
 					}
+				},
+				{
+					"id": "is-on-floor",
+					"objectClass": "PlayerCharacter",
+					"sid": 750549142838291,
+					"behaviorType": "Platform"
 				}
 			],
 			"actions": [
@@ -327,6 +333,127 @@
 				}
 			],
 			"sid": 788010289616443
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-jumping",
+					"objectClass": "PlayerCharacter",
+					"sid": 979835970069103,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "PlayerCharacter",
+					"sid": 724871992700411,
+					"parameters": {
+						"animation": "\"jump\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 394388674585053
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerCharacter",
+					"sid": 634537427358639,
+					"parameters": {
+						"object": "HazardRotating"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 643856506538630,
+					"parameters": {
+						"audio-file": "hurtnoice",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 175277205558734
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-landed",
+					"objectClass": "PlayerCharacter",
+					"sid": 394638826085001,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "PlayerCharacter",
+					"sid": 778005433684033,
+					"parameters": {
+						"animation": "\"idol\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 585476949661803
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerCharacter",
+					"sid": 256343039877692,
+					"parameters": {
+						"object": "HazardRotating2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 783263360649749,
+					"parameters": {
+						"audio-file": "hurtnoice",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 278740575847250
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerCharacter",
+					"sid": 529522438511616,
+					"parameters": {
+						"object": "block"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 305122545209325
+				}
+			],
+			"sid": 601800405976052
 		}
 	],
 	"sid": 213779086857886

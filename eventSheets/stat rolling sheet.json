@@ -271,6 +271,30 @@
 				}
 			],
 			"sid": 468708888584088
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 186974363617146
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 733764865198273,
+					"parameters": {
+						"audio-file": "AdhesiveWombat - Night Shade NO COPYRIGHT 8-bit Music",
+						"loop": "looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 256378900612824
 		}
 	],
 	"sid": 349017335582107

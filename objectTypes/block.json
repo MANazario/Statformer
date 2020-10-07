@@ -1,16 +1,10 @@
 {
-	"name": "PlatformStatic",
+	"name": "block",
 	"plugin-id": "Sprite",
-	"sid": 664075147911559,
+	"sid": 423512867651195,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 459510126333228
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -24,12 +18,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9064538,
+						"imageSpriteId": 5219636,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 581757428189603,
+				"sid": 319206473417698,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
