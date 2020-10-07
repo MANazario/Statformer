@@ -1,0 +1,60 @@
+{
+	"name": "PlatformVertical",
+	"plugin-id": "Sprite",
+	"sid": 539471213415027,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 504520700061495
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 621551219803976
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 226,
+						"height": 102,
+						"originX": 0.4690265486725664,
+						"originY": 0.30392156862745096,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1354573,
+						"collisionPoly": {
+							"points": [
+								0.004424778761061947,
+								0.19117647058823545,
+								0.9977876106194691,
+								0.20098039215686292,
+								0.9845132743362834,
+								0.30392156862745284,
+								0.019911504424778757,
+								0.30392156862745284
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 854680686211405,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

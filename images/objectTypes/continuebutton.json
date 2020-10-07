@@ -1,0 +1,37 @@
+{
+	"name": "ContinueButton",
+	"plugin-id": "Sprite",
+	"sid": 121522495302569,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 200,
+						"height": 80,
+						"originX": 0.5017199999999999,
+						"originY": 2.4161392405063293,
+						"originalSource": "C:\\Users\\Sean Johnson\\Documents\\GitHub\\Statformer\\images\\continuebutton-animation_1-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5290026,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 192720904483560,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

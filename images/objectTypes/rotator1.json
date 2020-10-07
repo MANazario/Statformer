@@ -1,0 +1,60 @@
+{
+	"name": "Rotator1",
+	"plugin-id": "Sprite",
+	"sid": 815438765115284,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 113868546169217
+		},
+		{
+			"behaviorId": "Orbit",
+			"name": "Orbit",
+			"sid": 659936502383136
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 226,
+						"height": 102,
+						"originX": 0.4690265486725664,
+						"originY": 0.30392156862745096,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8736352,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.11107843137254902,
+								1,
+								0.11111111111111113,
+								1,
+								1,
+								0,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 483158229804130,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

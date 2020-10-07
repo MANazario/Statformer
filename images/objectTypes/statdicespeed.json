@@ -1,0 +1,345 @@
+{
+	"name": "StatDiceSpeed",
+	"plugin-id": "Sprite",
+	"sid": 573648306689692,
+	"isGlobal": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 228,
+						"height": 198,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\Sean Johnson\\Documents\\GitHub\\Statformer\\images\\statdicespeed-animation 1-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 404678,
+						"collisionPoly": {
+							"points": [
+								0.24561403508771928,
+								0.20707070707070707,
+								0.5,
+								0.005050505050505051,
+								0.75,
+								0.20707070707070707,
+								0.9912280701754386,
+								0.5,
+								0.75,
+								0.7878787878787878,
+								0.5,
+								0.9848484848484849,
+								0.24561403508771928,
+								0.7878787878787878,
+								0.0043859649122807015,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 228,
+						"height": 198,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\Sean Johnson\\Documents\\GitHub\\Statformer\\images\\statdicespeed-animation 1-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9329542,
+						"collisionPoly": {
+							"points": [
+								0.24561403508771928,
+								0.20707070707070707,
+								0.5,
+								0.005050505050505051,
+								0.75,
+								0.20707070707070707,
+								0.9912280701754386,
+								0.5,
+								0.75,
+								0.7878787878787878,
+								0.5,
+								0.9848484848484849,
+								0.24561403508771928,
+								0.7878787878787878,
+								0.0043859649122807015,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 228,
+						"height": 198,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\Sean Johnson\\Documents\\GitHub\\Statformer\\images\\statdicespeed-animation 1-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 85232,
+						"collisionPoly": {
+							"points": [
+								0.24561403508771928,
+								0.20707070707070707,
+								0.5,
+								0.005050505050505051,
+								0.75,
+								0.20707070707070707,
+								0.9912280701754386,
+								0.5,
+								0.75,
+								0.7878787878787878,
+								0.5,
+								0.9848484848484849,
+								0.24561403508771928,
+								0.7878787878787878,
+								0.0043859649122807015,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 228,
+						"height": 198,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\Sean Johnson\\Documents\\GitHub\\Statformer\\images\\statdicespeed-animation 1-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4359802,
+						"collisionPoly": {
+							"points": [
+								0.24561403508771928,
+								0.20707070707070707,
+								0.5,
+								0.005050505050505051,
+								0.75,
+								0.20707070707070707,
+								0.9912280701754386,
+								0.5,
+								0.75,
+								0.7878787878787878,
+								0.5,
+								0.9848484848484849,
+								0.24561403508771928,
+								0.7878787878787878,
+								0.0043859649122807015,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 228,
+						"height": 198,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\Sean Johnson\\Documents\\GitHub\\Statformer\\images\\statdicespeed-animation 1-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5794098,
+						"collisionPoly": {
+							"points": [
+								0.24561403508771928,
+								0.20707070707070707,
+								0.5,
+								0.005050505050505051,
+								0.75,
+								0.20707070707070707,
+								0.9912280701754386,
+								0.5,
+								0.75,
+								0.7878787878787878,
+								0.5,
+								0.9848484848484849,
+								0.24561403508771928,
+								0.7878787878787878,
+								0.0043859649122807015,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 228,
+						"height": 198,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\Sean Johnson\\Documents\\GitHub\\Statformer\\images\\statdicespeed-animation 1-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9975095,
+						"collisionPoly": {
+							"points": [
+								0.24561403508771928,
+								0.20707070707070707,
+								0.5,
+								0.005050505050505051,
+								0.75,
+								0.20707070707070707,
+								0.9912280701754386,
+								0.5,
+								0.75,
+								0.7878787878787878,
+								0.5,
+								0.9848484848484849,
+								0.24561403508771928,
+								0.7878787878787878,
+								0.0043859649122807015,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 228,
+						"height": 198,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\Sean Johnson\\Documents\\GitHub\\Statformer\\images\\statdicespeed-animation 1-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 37005,
+						"collisionPoly": {
+							"points": [
+								0.24561403508771928,
+								0.20707070707070707,
+								0.5,
+								0.005050505050505051,
+								0.75,
+								0.20707070707070707,
+								0.9912280701754386,
+								0.5,
+								0.75,
+								0.7878787878787878,
+								0.5,
+								0.9848484848484849,
+								0.24561403508771928,
+								0.7878787878787878,
+								0.0043859649122807015,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 228,
+						"height": 198,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\Sean Johnson\\Documents\\GitHub\\Statformer\\images\\statdicespeed-animation 1-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5414758,
+						"collisionPoly": {
+							"points": [
+								0.24561403508771928,
+								0.20707070707070707,
+								0.5,
+								0.005050505050505051,
+								0.75,
+								0.20707070707070707,
+								0.9912280701754386,
+								0.5,
+								0.75,
+								0.7878787878787878,
+								0.5,
+								0.9848484848484849,
+								0.24561403508771928,
+								0.7878787878787878,
+								0.0043859649122807015,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 228,
+						"height": 198,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\Sean Johnson\\Documents\\GitHub\\Statformer\\images\\statdicespeed-animation 1-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 160414,
+						"collisionPoly": {
+							"points": [
+								0.24561403508771928,
+								0.20707070707070707,
+								0.5,
+								0.005050505050505051,
+								0.75,
+								0.20707070707070707,
+								0.9912280701754386,
+								0.5,
+								0.75,
+								0.7878787878787878,
+								0.5,
+								0.9848484848484849,
+								0.24561403508771928,
+								0.7878787878787878,
+								0.0043859649122807015,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 228,
+						"height": 198,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\Sean Johnson\\Documents\\GitHub\\Statformer\\images\\statdicespeed-animation 1-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 578537,
+						"collisionPoly": {
+							"points": [
+								0.24561403508771928,
+								0.20707070707070707,
+								0.5,
+								0.005050505050505051,
+								0.75,
+								0.20707070707070707,
+								0.9912280701754386,
+								0.5,
+								0.75,
+								0.7878787878787878,
+								0.5,
+								0.9848484848484849,
+								0.24561403508771928,
+								0.7878787878787878,
+								0.0043859649122807015,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 765997949531695,
+				"name": "Animation 1",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
