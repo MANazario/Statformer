@@ -137,7 +137,8 @@
 			"Sprite",
 			"Continue",
 			"Label",
-			"HazardRotating2"
+			"HazardRotating2",
+			"Goal"
 		],
 		"subfolders": []
 	},
