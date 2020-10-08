@@ -1,0 +1,20 @@
+{
+	"name": "TiledBackground6",
+	"plugin-id": "TiledBg",
+	"sid": 896366725608089,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 640,
+		"height": 480,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "C:\\Users\\Sean Johnson\\Documents\\Game Project\\Statformer\\Generation.jpg",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 6646881,
+		"useCollisionPoly": true
+	}
+}

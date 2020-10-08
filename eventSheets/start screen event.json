@@ -1,0 +1,58 @@
+{
+	"name": "Start Screen Event",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 157828563403954,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "HowToPlay"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 344911614523510,
+					"parameters": {
+						"layout": "Instructions"
+					}
+				}
+			],
+			"sid": 952875016737942
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 612175963493138,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Play"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 184433201036328,
+					"parameters": {
+						"layout": "Interlude"
+					}
+				}
+			],
+			"sid": 435881145588947
+		}
+	],
+	"sid": 851205427988197
+}

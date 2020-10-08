@@ -11,26 +11,14 @@
 			{
 				"frames": [
 					{
-						"width": 211,
-						"height": 140,
-						"originX": 0.5,
+						"width": 200,
+						"height": 80,
+						"originX": 0.4975,
 						"originY": 0.5,
-						"originalSource": "",
+						"originalSource": "C:\\Users\\Sean Johnson\\Documents\\Game Project\\Statformer\\Images\\Images\\statstopper-animation 1-000.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2888010,
-						"collisionPoly": {
-							"points": [
-								0.004739336492890996,
-								0,
-								1,
-								0,
-								1,
-								1,
-								0.004739336492890996,
-								1
-							]
-						},
+						"imageSpriteId": 1099262,
 						"useCollisionPoly": true,
 						"duration": 1
 					}

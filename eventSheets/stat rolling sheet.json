@@ -255,27 +255,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-clicked",
-					"objectClass": "Continue",
-					"sid": 999959716196972
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 885646858050084,
-					"parameters": {
-						"layout": "Platforms"
-					}
-				}
-			],
-			"sid": 468708888584088
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-start-of-layout",
 					"objectClass": "System",
 					"sid": 186974363617146
@@ -295,6 +274,32 @@
 				}
 			],
 			"sid": 256378900612824
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 290070750732794,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "ContinueButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 715777776456192,
+					"parameters": {
+						"layout": "Platforms"
+					}
+				}
+			],
+			"sid": 675433500527013
 		}
 	],
 	"sid": 349017335582107

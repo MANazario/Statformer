@@ -1,0 +1,32 @@
+{
+	"name": "Failure Sheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 770420863370275,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 893073440216076,
+					"parameters": {
+						"layout": "Start Screen"
+					}
+				}
+			],
+			"sid": 549561093981744
+		}
+	],
+	"sid": 259907833912856
+}

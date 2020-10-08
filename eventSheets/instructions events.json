@@ -1,0 +1,32 @@
+{
+	"name": "Instructions Events",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 139549543321876,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 201657970399029,
+					"parameters": {
+						"layout": "Start Screen"
+					}
+				}
+			],
+			"sid": 169632375081349
+		}
+	],
+	"sid": 606287563501174
+}

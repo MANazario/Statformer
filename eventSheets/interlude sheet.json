@@ -1,0 +1,27 @@
+{
+	"name": "Interlude Sheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Continue",
+					"sid": 458116037674604
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 941476198036632,
+					"parameters": {
+						"layout": "Stat Rolling"
+					}
+				}
+			],
+			"sid": 589452055308562
+		}
+	],
+	"sid": 364112298016262
+}

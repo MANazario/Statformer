@@ -327,9 +327,155 @@
 								"variable": "Health",
 								"value": "1"
 							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 448036627946765,
+							"parameters": {
+								"audio-file": "hurtnoice",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "PlayerCharacter",
+							"sid": 360941631658937
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 318276380879801,
+							"parameters": {
+								"object-to-create": "PlayerCharacter",
+								"layer": "SpawnPoint.LayerName",
+								"x": "SpawnPoint.X",
+								"y": "SpawnPoint.Y"
+							}
 						}
 					],
 					"sid": 453002628720614
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "PlayerCharacter",
+							"sid": 456067568408865,
+							"parameters": {
+								"object": "HazardRotating2"
+							}
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 719101580078844
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 640405641163989,
+							"parameters": {
+								"variable": "Health",
+								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 750272875894070,
+							"parameters": {
+								"audio-file": "hurtnoice",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 802421041731596,
+							"parameters": {
+								"object-to-create": "PlayerCharacter",
+								"layer": "SpawnPoint.LayerName",
+								"x": "SpawnPoint.X",
+								"y": "SpawnPoint.Y"
+							}
+						}
+					],
+					"sid": 795311385940004
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-jumping",
+							"objectClass": "PlayerCharacter",
+							"sid": 398547627940515,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "PlayerCharacter",
+							"sid": 954400071429683,
+							"parameters": {
+								"animation": "\"jump\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 633672355521292
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-landed",
+							"objectClass": "PlayerCharacter",
+							"sid": 994609035437223,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "PlayerCharacter",
+							"sid": 345608580092475,
+							"parameters": {
+								"animation": "\"idol\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 644354704045251
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "PlayerCharacter",
+							"sid": 836261470892140,
+							"parameters": {
+								"object": "block"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 900571588896662
+						}
+					],
+					"sid": 331031582028471
 				}
 			],
 			"sid": 788010289616443
@@ -338,122 +484,51 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "is-jumping",
-					"objectClass": "PlayerCharacter",
-					"sid": 979835970069103,
-					"behaviorType": "Platform"
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "PlayerCharacter",
-					"sid": 724871992700411,
-					"parameters": {
-						"animation": "\"jump\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 394388674585053
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "PlayerCharacter",
-					"sid": 634537427358639,
-					"parameters": {
-						"object": "HazardRotating"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 643856506538630,
-					"parameters": {
-						"audio-file": "hurtnoice",
-						"loop": "not-looping",
-						"volume": "0",
-						"tag-optional": "\"\""
-					}
-				}
-			],
-			"sid": 175277205558734
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-landed",
-					"objectClass": "PlayerCharacter",
-					"sid": 394638826085001,
-					"behaviorType": "Platform"
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "PlayerCharacter",
-					"sid": 778005433684033,
-					"parameters": {
-						"animation": "\"idol\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 585476949661803
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "PlayerCharacter",
-					"sid": 256343039877692,
-					"parameters": {
-						"object": "HazardRotating2"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 783263360649749,
-					"parameters": {
-						"audio-file": "hurtnoice",
-						"loop": "not-looping",
-						"volume": "0",
-						"tag-optional": "\"\""
-					}
-				}
-			],
-			"sid": 278740575847250
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "PlayerCharacter",
-					"sid": 529522438511616,
-					"parameters": {
-						"object": "block"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "restart-layout",
+					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 305122545209325
+					"sid": 175134272215256,
+					"parameters": {
+						"variable": "Health",
+						"comparison": 0,
+						"value": "0"
+					}
 				}
 			],
-			"sid": 601800405976052
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 492339717745376,
+					"parameters": {
+						"layout": "Failure"
+					}
+				}
+			],
+			"sid": 370813705818005
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerCharacter",
+					"sid": 910925283352543,
+					"parameters": {
+						"object": "Goal"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 904460006494339,
+					"parameters": {
+						"layout": "Success"
+					}
+				}
+			],
+			"sid": 790606865008216
 		}
 	],
 	"sid": 213779086857886

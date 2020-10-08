@@ -1,0 +1,32 @@
+{
+	"name": "Success Sheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 190097137627556,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 909746676782380,
+					"parameters": {
+						"layout": "Start Screen"
+					}
+				}
+			],
+			"sid": 822402286073058
+		}
+	],
+	"sid": 782221135347515
+}
