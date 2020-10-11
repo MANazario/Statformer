@@ -1,0 +1,73 @@
+{
+	"name": "HazardRotating3_SINE",
+	"plugin-id": "Sprite",
+	"sid": 638119818730589,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Rotate",
+			"name": "Rotate",
+			"sid": 629959925787478
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 837608497310038
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 124849052408016
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 512,
+						"height": 512,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2457491,
+						"collisionPoly": {
+							"points": [
+								0.1484375,
+								0.1015625,
+								0.5,
+								0,
+								0.859375,
+								0.140625,
+								0.9921875,
+								0.5,
+								0.8515625,
+								0.859375,
+								0.5,
+								0.9921875,
+								0.1796875,
+								0.8671875,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 455122416166528,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

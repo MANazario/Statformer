@@ -158,7 +158,8 @@
 			"TiledBackground4",
 			"TiledBackground5",
 			"TiledBackground6",
-			"Goal"
+			"Goal",
+			"HazardRotating3_SINE"
 		],
 		"subfolders": []
 	},
